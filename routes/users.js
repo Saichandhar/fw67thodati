@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var val=0;
+var x=Math.random();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  val=val+1;
-  res.send('User accesses are:'+val);
+  val= Math.cosh(x);
+  res.send('Total value is'+val);
 });
 
 module.exports = router;
